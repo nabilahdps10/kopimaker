@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El's Coffee Purwokerto - Specialty Coffee Roastery & Cozy Eatery</title>
+    <meta name="description" content="Website Resmi El's Coffee Purwokerto di Jl. Prof. Dr. Suharso No.2. Menyajikan kopi specialty nusantara, rice bowl saikoro, pasta, dan tempat WFC ternyaman.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: {
+                            50: '#fbf8f5',
+                            100: '#f6f0ea',
+                            200: '#ece0d3',
+                            300: '#dec7b2',
+                            400: '#c8a487',
+                            500: '#b88965',
+                            600: '#a37151',
+                            700: '#855941',
+                            800: '#6d4937',
+                            900: '#2c1e17',
+                            950: '#150d09',
+                        },
+                        amberGold: {
+                            400: '#e5b66d',
+                            500: '#d49b42',
+                            600: '#ba7f2f',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f6d396 0%, #d49b42 50%, #e8bc72 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-color: #120d0a;
+            background-image: radial-gradient(#2f2119 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-[#faf8f5] text-[#2c2420] font-sans antialiased selection:bg-amberGold-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#1c1511] text-[#cbb8aa] text-xs sm:text-sm py-2 px-4 border-b border-[#2d221c]">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-amberGold-500/20 text-amberGold-400 border border-amberGold-500/30">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
+                    Purwokerto Branch Open
+                </span>
+                <span>Jl. Prof. Dr. Suharso No.2 (Dekat GOR Satria Purwokerto)</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <span><i class="fa-regular fa-clock text-amberGold-400 mr-1"></i> Buka Setiap Hari: 10.00 - 22.00 WIB</span>
+                <span class="hidden md:inline text-coffee-600">•</span>
+                <a href="https://maps.google.com/?q=Els+Koffie+Purwokerto" target="_blank" class="hidden md:flex items-center text-amberGold-400 hover:text-amberGold-300 transition">
+                    <i class="fa-solid fa-location-dot mr-1"></i> Buka Maps
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-[#120d0a]/95 backdrop-blur-md border-b border-[#2c2018] transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#beranda" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-full bg-gradient-to-br from-amberGold-400 to-coffee-700 flex items-center justify-center text-white shadow-lg shadow-amberGold-500/20 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-mug-hot text-xl text-[#120d0a]"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-serif font-bold tracking-tight text-white group-hover:text-amberGold-400 transition-colors">
+                            El's Coffee
+                        </div>
+                        <div class="text-[10px] tracking-[0.25em] uppercase text-amberGold-400 font-semibold">
+                            Purwokerto
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <a href="#beranda" class="px-3 py-2 rounded-lg text-sm font-medium text-amberGold-400 bg-white/5 transition">
+                        Beranda
+                    </a>
+                    <a href="#menu" class="px-3 py-2 rounded-lg text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition">
+                        Daftar Menu
+                    </a>
+                    <a href="#fasilitas" class="px-3 py-2 rounded-lg text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition">
+                        Fasilitas
+                    </a>
+                    <a href="#galeri" class="px-3 py-2 rounded-lg text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition">
+                        Foto Google
+                    </a>
+                    <a href="#lokasi" class="px-3 py-2 rounded-lg text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition">
+                        Alamat Purwokerto
+                    </a>
+                    <a href="#ulasan" class="px-3 py-2 rounded-lg text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition">
+                        Ulasan
+                    </a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20ingin%20tanya/order" target="_blank" class="inline-flex items-center justify-center px-4 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-[#120d0a] bg-gradient-to-r from-amberGold-400 to-amberGold-500 hover:from-amberGold-300 hover:to-amberGold-400 shadow-md shadow-amberGold-500/20 transition-all hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-sm mr-2"></i> Chat Purwokerto
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex md:hidden">
+                    <button id="mobileMenuBtn" type="button" class="text-gray-300 hover:text-white p-2 rounded-lg hover:bg-white/5 focus:outline-none" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-[#18120e] border-b border-[#2d2119] px-4 pt-3 pb-5 space-y-2">
+            <a href="#beranda" class="block px-3 py-2.5 rounded-lg text-base font-medium text-amberGold-400 bg-white/5">
+                <i class="fa-solid fa-house w-6 text-amberGold-400/80"></i> Beranda
+            </a>
+            <a href="#menu" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-300 hover:text-white">
+                <i class="fa-solid fa-book-open w-6 text-amberGold-400/80"></i> Daftar Menu
+            </a>
+            <a href="#fasilitas" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-300 hover:text-white">
+                <i class="fa-solid fa-wifi w-6 text-amberGold-400/80"></i> Fasilitas & WFC
+            </a>
+            <a href="#galeri" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-300 hover:text-white">
+                <i class="fa-solid fa-camera-retro w-6 text-amberGold-400/80"></i> Foto Google
+            </a>
+            <a href="#lokasi" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-300 hover:text-white">
+                <i class="fa-solid fa-map-location-dot w-6 text-amberGold-400/80"></i> Lokasi Purwokerto
+            </a>
+            <a href="#ulasan" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-300 hover:text-white">
+                <i class="fa-solid fa-star w-6 text-amberGold-400/80"></i> Ulasan Pengunjung
+            </a>
+            <div class="pt-3 border-t border-gray-800">
+                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto" target="_blank" class="w-full flex items-center justify-center px-4 py-2.5 rounded-xl text-sm font-semibold text-[#120d0a] bg-amberGold-400 hover:bg-amberGold-300 transition">
+                    <i class="fa-brands fa-whatsapp text-base mr-2"></i> Hubungi WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Page Content -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section id="beranda" class="relative bg-[#120d0a] text-white overflow-hidden hero-pattern py-20 lg:py-28 border-b border-[#291e17]">
+            <div class="absolute -top-40 -left-40 w-96 h-96 bg-amberGold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute top-1/2 -right-40 w-96 h-96 bg-coffee-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Headline -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amberGold-500/15 border border-amberGold-500/30 text-amberGold-400 text-xs sm:text-sm font-medium tracking-wide">
+                            <i class="fa-solid fa-location-dot"></i> Cabang Purwokerto Timur • Dekat GOR Satria
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight leading-[1.15]">
+                            Nikmati Kopi <span class="gold-gradient-text">Specialty Nusantara</span> di Sudut Kota Purwokerto.
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-gray-300 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            Dari biji kopi pilihan roastery terkemuka Indonesia hingga sajian makanan lezat seperti Saikoro Beef Bowl dan Pasta. Rasakan suasana kafe modern bernuansa monokrom hangat yang ramah untuk nugas (WFC) maupun nongkrong santai.
+                        </p>
+
+                        <!-- Action CTA -->
+                        <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                            <a href="#menu" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-amberGold-400 to-amberGold-500 hover:from-amberGold-300 hover:to-amberGold-400 text-[#120d0a] font-bold text-sm tracking-wide shadow-xl shadow-amberGold-500/20 transition-all hover:scale-105 flex items-center">
+                                <i class="fa-solid fa-book-open mr-2.5"></i> Lihat Menu Lengkap
+                            </a>
+                            <a href="#lokasi" class="px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/20 transition-all flex items-center">
+                                <i class="fa-solid fa-map-location-dot mr-2.5 text-amberGold-400"></i> Lokasi & Peta
+                            </a>
+                        </div>
+
+                        <!-- Feature Badges -->
+                        <div class="pt-6 border-t border-[#291e17] grid grid-cols-3 gap-4 text-center lg:text-left">
+                            <div>
+                                <div class="text-2xl font-serif font-bold text-amberGold-400">100%</div>
+                                <div class="text-xs text-gray-400 mt-0.5">Specialty Grade Beans</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-serif font-bold text-amberGold-400">WFC Ready</div>
+                                <div class="text-xs text-gray-400 mt-0.5">Full AC & Stopkontak</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-serif font-bold text-amberGold-400">10.00-22.00</div>
+                                <div class="text-xs text-gray-400 mt-0.5">Buka Setiap Hari</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Visual Image Mosaic -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <div class="rounded-3xl overflow-hidden shadow-2xl border border-white/10 relative group">
+                                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Suasana El's Coffee Purwokerto" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-[#120d0a] via-transparent to-transparent"></div>
+                                
+                                <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-[#1c1511]/90 backdrop-blur-md border border-white/15">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <h4 class="text-white font-serif font-bold text-base">El's Coffee Purwokerto</h4>
+                                            <p class="text-xs text-amberGold-400 flex items-center mt-0.5">
+                                                <i class="fa-solid fa-star mr-1"></i> 4.8 Bintang di Google Reviews
+                                            </p>
+                                        </div>
+                                        <a href="https://maps.google.com/?q=Els+Koffie+Purwokerto" target="_blank" class="w-10 h-10 rounded-full bg-amberGold-400 text-[#120d0a] flex items-center justify-center hover:scale-110 transition">
+                                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hidden sm:block absolute -top-6 -left-6 bg-[#1a130f] p-3.5 rounded-2xl border border-white/10 shadow-xl backdrop-blur-md">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-amberGold-500/20 text-amberGold-400 flex items-center justify-center">
+                                        <i class="fa-solid fa-wifi text-base"></i>
+                                    </div>
+                                    <div class="pr-2">
+                                        <span class="block text-xs font-bold text-white">Ultra Fast Wi-Fi</span>
+                                        <span class="block text-[11px] text-gray-400">100 Mbps WFC Speed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Purwokerto Quick Bar -->
+        <section class="bg-[#1c1511] text-gray-300 py-6 border-b border-[#2a1e16]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-3">
+                        <div class="w-11 h-11 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-map-location text-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold text-sm">Alamat Purwokerto</h5>
+                            <p class="text-xs text-gray-400">Jl. Prof. Dr. Suharso No.2</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center md:justify-start gap-3">
+                        <div class="w-11 h-11 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-regular fa-clock text-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold text-sm">Jam Operasional</h5>
+                            <p class="text-xs text-gray-400">10.00 – 22.00 WIB (Tiap Hari)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center md:justify-start gap-3">
+                        <div class="w-11 h-11 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-compass text-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold text-sm">Patokan Lokasi</h5>
+                            <p class="text-xs text-gray-400">Dekat GOR Satria (Depan Reta)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center md:justify-start gap-3">
+                        <div class="w-11 h-11 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-headset text-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold text-sm">WhatsApp Call / Order</h5>
+                            <p class="text-xs text-amberGold-400 font-medium">0812-2580-9988</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section with Interactive JavaScript Filter & Search -->
+        <section id="menu" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amberGold-600 bg-amberGold-50 px-3 py-1 rounded-full">
+                        Daftar Menu & Kisaran Harga
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950 mt-3 mb-4">
+                        Pilihan Menu El's Coffee Purwokerto
+                    </h2>
+                    <p class="text-gray-600 text-sm sm:text-base">
+                        Dari specialty espresso, biji kopi single origin manual brew V60, minuman signature choco mint, hingga hidangan berat Saikoro Beef Bowl dan snack platter.
+                    </p>
+
+                    <!-- Live Menu Search -->
+                    <div class="max-w-md mx-auto mt-6 relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-gray-400"></i>
+                        <input 
+                            id="menuSearch" 
+                            type="text" 
+                            placeholder="Cari menu (contoh: Americano, Saikoro, Matcha, Platter)..." 
+                            class="w-full pl-11 pr-4 py-2.5 rounded-full border border-gray-200 bg-gray-50 focus:bg-white focus:border-amberGold-500 focus:outline-none text-sm transition"
+                        >
+                    </div>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="flex items-center justify-center flex-wrap gap-2 mb-12">
+                    <button onclick="filterMenu('all')" class="cat-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wide transition active bg-coffee-900 text-white shadow" data-cat="all">
+                        <i class="fa-solid fa-utensils mr-1.5 text-amberGold-400"></i> Semua Menu
+                    </button>
+                    <button onclick="filterMenu('coffee')" class="cat-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wide transition bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="coffee">
+                        <i class="fa-solid fa-mug-hot mr-1.5"></i> Specialty Coffee
+                    </button>
+                    <button onclick="filterMenu('signature')" class="cat-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wide transition bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="signature">
+                        <i class="fa-solid fa-star mr-1.5"></i> Signature Drinks
+                    </button>
+                    <button onclick="filterMenu('non-coffee')" class="cat-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wide transition bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="non-coffee">
+                        <i class="fa-solid fa-glass-water mr-1.5"></i> Non-Coffee
+                    </button>
+                    <button onclick="filterMenu('main-course')" class="cat-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wide transition bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="main-course">
+                        <i class="fa-solid fa-bowl-rice mr-1.5"></i> Rice Bowl & Mains
+                    </button>
+                    <button onclick="filterMenu('pasta')" class="cat-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wide transition bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="pasta">
+                        <i class="fa-solid fa-plate-wheat mr-1.5"></i> Pasta
+                    </button>
+                    <button onclick="filterMenu('snacks')" class="cat-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wide transition bg-gray-100 text-gray-700 hover:bg-gray-200" data-cat="snacks">
+                        <i class="fa-solid fa-cookie-bite mr-1.5"></i> Snacks & Dessert
+                    </button>
+                </div>
+
+                <!-- Menu Cards Grid -->
+                <div id="menuGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Americano -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="coffee" data-name="americano ice hot coffee">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Americano" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Classic Fav</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 28.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Specialty Coffee</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Americano (Ice / Hot)</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Ekstraksi ganda specialty espresso dari El's Coffee blend dengan air mineral murni, menghasilkan rasa clean dan fruity aromatik.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Americano" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caffè Latte -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="coffee" data-name="caffe latte ice hot coffee">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Caffè Latte" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Best Seller</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 32.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Specialty Coffee</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Caffè Latte (Ice / Hot)</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Paduan seimbang espresso kaya rasa dengan steamed fresh milk bertekstur lembut dan lapisan microfoam halus.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Caffe%20Latte" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Manual Brew V60 Single Origin -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="coffee" data-name="manual brew v60 nusantara single origin gayo toraja flores">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Manual Brew V60" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Roaster's Pick</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 35.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Specialty Coffee</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Manual Brew V60 Nusantara</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Seduhan tangan V60 dengan biji kopi pilihan langsung dari roastery: Aceh Gayo, Mandheling, Toraja Kalosi, Flores Bajawa, atau Papua Wamena.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Manual%20Brew%20V60" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Choco Mint Coffee -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="signature" data-name="choco mint coffee cokelat signature">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Choco Mint Coffee" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Signature Fav</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 35.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Signature Drinks</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Choco Mint Coffee</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Kombinasi unik signature dark chocolate khas El's Coffee, espresso harum, dan sensasi dingin menyegarkan dari ekstrak daun mint.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Choco%20Mint%20Coffee" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Es Kopi Susu Gula Aren Els -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="signature" data-name="es kopi susu gula aren els signature">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" alt="Es Kopi Susu Aren" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Favorit WFC</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 25.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Signature Drinks</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Es Kopi Susu Gula Aren</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Racikan kopi susu kekinian ala El's Coffee dengan gula aren organik murni dan rasa kopi yang tetap dominan dan creamy.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Es%20Kopi%20Susu%20Gula%20Aren" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Artisan Matcha Latte -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="non-coffee" data-name="artisan matcha latte non coffee green tea">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Favorite</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 34.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Non-Coffee & Tea</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Artisan Matcha Latte</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Bubuk matcha murni berkualitas Jepang diseduh dengan steamed fresh milk, menghasilkan aroma earthy yang otentik dan menenangkan.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Matcha%20Latte" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saikoro Beef Rice Bowl -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="main-course" data-name="saikoro beef rice bowl daging sapi bbq blackpepper">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Saikoro Beef Rice Bowl" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Top Recommendation</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 48.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Rice Bowl & Mains</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Saikoro Beef Rice Bowl</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Daging sapi saikoro empuk juicy yang dimasak dengan bumbu Blackpepper atau BBQ istimewa, disajikan dengan nasi hangat dan telur onsen.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Saikoro%20Beef%20Rice%20Bowl" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Els Omurice with Butter Rice -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="main-course" data-name="els omurice with butter rice nasi telur jepang">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&q=80" alt="Els Omurice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Customer Fav</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 42.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Rice Bowl & Mains</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Els Omurice Butter Rice</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Nasi mentega gurih dibalut telur dadar tornado khas Jepang yang lumer lembut, disiram saus demiglace spesial racikan chef El's Coffee.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Els%20Omurice" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Creamy Carbonara Pasta -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="pasta" data-name="creamy carbonara pasta spaghetti keju smoked beef">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=600&q=80" alt="Carbonara Pasta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Best Seller</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 44.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Pasta & Western</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Creamy Carbonara Pasta</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Spaghetti al dente dengan saus krim keju parmesan gurih, smoked beef crispy, dan taburan parsley harum.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Carbonara%20Pasta" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Els Platter -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="snacks" data-name="els platter fries nachos chicken fingers onion rings snack">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80" alt="Els Platter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Sharing Fav</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 45.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Snacks & Dessert</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Els Sharing Platter</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Paket cemilan komplit untuk nongkrong bersama: french fries renyah, nachos renyah berkeju, chicken fingers gurih, dan onion rings keemasan.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Els%20Platter" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Churros with Chocolate -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="snacks" data-name="churros with chocolate dip dessert snack manis">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=600&q=80" alt="Churros" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Sweet Treat</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 28.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Snacks & Dessert</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Churros with Chocolate Dip</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Churros spanyol renyah di luar dan lembut di dalam berbalut gula kayu manis harum, disajikan dengan saus cokelat Belgia leleh.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Churros" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Els Curly Corn -->
+                    <div class="menu-item bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="snacks" data-name="els curly corn jagung snack gurih">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80" alt="Curly Corn" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-amberGold-500 text-[#120d0a] text-[11px] font-bold px-3 py-1 rounded-full uppercase">Unique Snack</span>
+                            <span class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md text-amberGold-400 font-bold text-base px-3.5 py-1 rounded-xl">Rp 24.000</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600 uppercase tracking-wider mb-1">Snacks & Dessert</div>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 group-hover:text-amberGold-600 transition">Els Curly Corn</h3>
+                                <p class="text-gray-500 text-sm mt-2 leading-relaxed">Jagung manis iris melingkar berbumbu gurih pedas manis yang digoreng garing, camilan unik teman ngopi asik.</p>
+                            </div>
+                            <div class="pt-5 mt-4 border-t border-gray-100 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">Purwokerto Cabang</span>
+                                <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20mau%20order%20Els%20Curly%20Corn" target="_blank" class="text-xs font-bold text-coffee-900 hover:text-amberGold-600 flex items-center transition">
+                                    Pesan via WA <i class="fa-brands fa-whatsapp ml-1 text-emerald-600 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section id="fasilitas" class="py-20 bg-[#150f0c] text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amberGold-400 bg-amberGold-500/10 border border-amberGold-500/20 px-3 py-1 rounded-full">
+                        Fasilitas Lengkap
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-3 mb-4">
+                        Kenyamanan Maksimal di Cabang Purwokerto
+                    </h2>
+                    <p class="text-gray-400 text-sm sm:text-base">
+                        Dirancang khusus untuk mendukung produktivitas kerja jarak jauh (WFC), diskusi tugas kuliah, hingga kumpul keluarga di Purwokerto.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-[#1e1612] p-8 rounded-3xl border border-[#31231a] hover:border-amberGold-500/40 transition-all duration-300">
+                        <div class="w-14 h-14 rounded-2xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-2">WFC Ready & Stopkontak</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Setiap sudut dan meja dilengkapi stopkontak untuk kenyamanan laptop/gadget Anda saat bekerja atau nugas.</p>
+                    </div>
+
+                    <div class="bg-[#1e1612] p-8 rounded-3xl border border-[#31231a] hover:border-amberGold-500/40 transition-all duration-300">
+                        <div class="w-14 h-14 rounded-2xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-2">WiFi Berkecepatan Tinggi</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Koneksi internet serat optik stabil dan kencang hingga 100 Mbps, cocok untuk meeting online, upload data, & browsing.</p>
+                    </div>
+
+                    <div class="bg-[#1e1612] p-8 rounded-3xl border border-[#31231a] hover:border-amberGold-500/40 transition-all duration-300">
+                        <div class="w-14 h-14 rounded-2xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-2">Ruangan Indoor Full AC</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Interior modern minimalis ber-AC dingin yang tenang, higienis, dan bebas asap rokok.</p>
+                    </div>
+
+                    <div class="bg-[#1e1612] p-8 rounded-3xl border border-[#31231a] hover:border-amberGold-500/40 transition-all duration-300">
+                        <div class="w-14 h-14 rounded-2xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-cloud-sun"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-2">Area Outdoor Cozy</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Bagi pecinta udara segar sore hari dan smoking area yang asri dengan pencahayaan estetik saat malam.</p>
+                    </div>
+
+                    <div class="bg-[#1e1612] p-8 rounded-3xl border border-[#31231a] hover:border-amberGold-500/40 transition-all duration-300">
+                        <div class="w-14 h-14 rounded-2xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-mosque"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-2">Mushola Bersih</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Fasilitas ibadah lengkap dengan sajadah dan tempat wudhu yang selalu terjaga kebersihannya.</p>
+                    </div>
+
+                    <div class="bg-[#1e1612] p-8 rounded-3xl border border-[#31231a] hover:border-amberGold-500/40 transition-all duration-300">
+                        <div class="w-14 h-14 rounded-2xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-square-parking"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-2">Parkir Luas & Aman</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Kapasitas parkir motor dan mobil yang lega dengan petugas keamanan kafe yang ramah.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Photos & Ambiance Gallery -->
+        <section id="galeri" class="py-20 bg-[#faf8f5]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-coffee-700 bg-coffee-100 px-3 py-1 rounded-full">
+                            Foto-Foto yang Ada di Google & Suasana
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950 mt-3">
+                            Potret Visual Kafe El's Coffee Purwokerto
+                        </h2>
+                    </div>
+                    <p class="text-gray-600 text-sm max-w-md mt-4 md:mt-0">
+                        Interior monokrom elegan, area outdoor rindang, mesin espresso profesional, dan sajian kuliner yang instagramable.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80" alt="Espresso Bar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                            <span class="text-[11px] font-semibold text-amberGold-400 uppercase tracking-wider mb-1">Barista Bar</span>
+                            <h4 class="text-base font-serif font-bold leading-tight">Modern Espresso Station</h4>
+                            <p class="text-xs text-gray-300 mt-1">Mesin espresso profesional dan display biji specialty nusantara.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80" alt="Indoor Seating WFC" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                            <span class="text-[11px] font-semibold text-amberGold-400 uppercase tracking-wider mb-1">Indoor AC</span>
+                            <h4 class="text-base font-serif font-bold leading-tight">Cozy WFC & Nugas Nook</h4>
+                            <p class="text-xs text-gray-300 mt-1">Meja ber-stopkontak, kursi ergonomis, dan AC sejuk.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80" alt="V60 Pour Over" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                            <span class="text-[11px] font-semibold text-amberGold-400 uppercase tracking-wider mb-1">Manual Brew</span>
+                            <h4 class="text-base font-serif font-bold leading-tight">V60 Single Origin</h4>
+                            <p class="text-xs text-gray-300 mt-1">Seduhan manual biji kopi Aceh Gayo, Mandheling, & Toraja.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=1000&q=80" alt="Latte Art" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                            <span class="text-[11px] font-semibold text-amberGold-400 uppercase tracking-wider mb-1">Coffee Art</span>
+                            <h4 class="text-base font-serif font-bold leading-tight">Artisan Caffè Latte</h4>
+                            <p class="text-xs text-gray-300 mt-1">Latte art halus dengan steamed fresh milk bertekstur lembut.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80" alt="Saikoro Bowl" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                            <span class="text-[11px] font-semibold text-amberGold-400 uppercase tracking-wider mb-1">Mains</span>
+                            <h4 class="text-base font-serif font-bold leading-tight">Saikoro Beef Bowl</h4>
+                            <p class="text-xs text-gray-300 mt-1">Daging sapi saikoro juicy bumbu blackpepper.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1000&q=80" alt="Outdoor Seating" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                            <span class="text-[11px] font-semibold text-amberGold-400 uppercase tracking-wider mb-1">Outdoor</span>
+                            <h4 class="text-base font-serif font-bold leading-tight">Green Garden Patio</h4>
+                            <p class="text-xs text-gray-300 mt-1">Suasana outdoor sejuk di kawasan Arcawinangun Purwokerto.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=1000&q=80" alt="Els Platter" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                            <span class="text-[11px] font-semibold text-amberGold-400 uppercase tracking-wider mb-1">Snacks</span>
+                            <h4 class="text-base font-serif font-bold leading-tight">Els Sharing Platter</h4>
+                            <p class="text-xs text-gray-300 mt-1">Fries, nachos, chicken finger, dan onion rings renyah.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=1000&q=80" alt="Refreshing Mocktail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                            <span class="text-[11px] font-semibold text-amberGold-400 uppercase tracking-wider mb-1">Mocktail</span>
+                            <h4 class="text-base font-serif font-bold leading-tight">Fresh Berry Fizz</h4>
+                            <p class="text-xs text-gray-300 mt-1">Minuman dingin segar pelepas dahaga cuaca siang.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Google Maps Purwokerto -->
+        <section id="lokasi" class="py-20 bg-white border-t border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Information -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-amberGold-600 bg-amberGold-50 px-3 py-1 rounded-full">
+                                Lokasi Resmi Purwokerto
+                            </span>
+                            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950 mt-3 mb-4">
+                                Alamat Cabang Purwokerto
+                            </h2>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Lokasi sangat strategis di jalan protokol Purwokerto Timur, mudah diakses kendaraan roda 2 maupun roda 4 dengan area parkir lega.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="p-5 rounded-2xl bg-[#faf7f2] border border-[#eee3d5] space-y-2">
+                                <div class="flex items-center gap-2 text-coffee-800 font-bold text-sm">
+                                    <i class="fa-solid fa-map-pin text-amberGold-600"></i> Alamat Lengkap:
+                                </div>
+                                <p class="text-gray-800 text-sm font-medium leading-relaxed">
+                                    Jl. Prof. Dr. Suharso No.2, RT.04/RW.02, Arcawinangun, Kec. Purwokerto Timur, Kabupaten Banyumas, Jawa Tengah 53113
+                                </p>
+                                <div class="pt-1 text-xs text-amberGold-700 font-semibold">
+                                    📍 Patokan: Tepat di depan Reta Beauty Clinic (± 200m timur GOR Satria Purwokerto)
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                                    <span class="text-xs text-gray-500 block">Jam Operasional</span>
+                                    <span class="text-sm font-bold text-gray-900 block mt-0.5">10.00 – 22.00 WIB</span>
+                                    <span class="text-[11px] text-emerald-600 font-semibold">Buka Setiap Hari</span>
+                                </div>
+                                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                                    <span class="text-xs text-gray-500 block">Kontak WhatsApp</span>
+                                    <a href="https://wa.me/6281225809988" target="_blank" class="text-sm font-bold text-emerald-600 hover:underline block mt-0.5">0812-2580-9988</a>
+                                    <span class="text-[11px] text-gray-400">Fast Response</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 flex flex-wrap gap-4">
+                            <a href="https://maps.google.com/?q=Els+Koffie+Purwokerto" target="_blank" class="px-6 py-3.5 rounded-full bg-coffee-900 hover:bg-coffee-950 text-white font-semibold text-xs uppercase tracking-wider shadow-md transition flex items-center">
+                                <i class="fa-solid fa-diamond-turn-right mr-2 text-amberGold-400"></i> Buka Google Maps Langsung
+                            </a>
+                            <button onclick="navigator.clipboard.writeText('Jl. Prof. Dr. Suharso No.2, Arcawinangun, Purwokerto Timur, Banyumas 53113'); alert('Alamat berhasil disalin ke clipboard!');" class="px-5 py-3.5 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold text-xs tracking-wider transition flex items-center">
+                                <i class="fa-regular fa-copy mr-2"></i> Salin Alamat
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Google Maps Embed -->
+                    <div class="lg:col-span-7">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] relative">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.327429184589!2d109.24838637500135!3d-7.428989592581699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655c3c09f3032b%3A0xe54e207908c6ec97!2sEls%20Koffie%20Purwokerto!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                                class="w-full h-full border-0" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Reviews -->
+        <section id="ulasan" class="py-20 bg-[#faf8f5] border-t border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-1.5 text-amber-500 text-sm mb-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="text-gray-700 font-bold ml-2">4.8 / 5.0 di Google Maps</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950">
+                        Ulasan Pengunjung di Purwokerto
+                    </h2>
+                    <p class="text-gray-600 text-sm sm:text-base mt-2">
+                        Pengalaman asli mereka yang telah menikmati kopi dan suasana El's Coffee Purwokerto.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-sm mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 text-sm italic leading-relaxed mb-6">
+                                "Tempatnya strategis banget deket GOR Satria. Tempatnya luas, ada indoor ber-AC dan outdoor. Cocok banget buat yang cari tempat kerja/nugas di Purwokerto karena WiFi kencang dan colokan ada di mana-mana. Saikoro Beef Bowl-nya juara!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&q=80" alt="Dimas" class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Dimas Prasetyo</h4>
+                                <span class="text-xs text-gray-500 flex items-center">
+                                    <i class="fa-brands fa-google text-xs text-red-500 mr-1"></i> Google Local Guide Purwokerto
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-sm mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 text-sm italic leading-relaxed mb-6">
+                                "Kopi di El's Coffee ga pernah ngecewain! V60 Aceh Gayo dan Choco Mint-nya mantap. Ambience-nya mewah tapi harga masih bersahabat di kantong mahasiswa & pekerja."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Annisa" class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Annisa Rahmawati</h4>
+                                <span class="text-xs text-gray-500 flex items-center">
+                                    <i class="fa-brands fa-google text-xs text-red-500 mr-1"></i> Google Review Purwokerto
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-sm mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 text-sm italic leading-relaxed mb-6">
+                                "Salah satu cafe terbaik di Purwokerto Timur. Parkir mobil dan motor luas, mushola wangi dan bersih, pelayanan ramah dan cepat. Sangat direkomendasikan!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=120&q=80" alt="Rizky" class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Rizky Kurniawan</h4>
+                                <span class="text-xs text-gray-500 flex items-center">
+                                    <i class="fa-brands fa-google text-xs text-red-500 mr-1"></i> Google Local Guide Purwokerto
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Booking & WhatsApp -->
+        <section class="py-16 bg-[#18120e] text-white text-center relative overflow-hidden">
+            <div class="max-w-4xl mx-auto px-4 relative z-10">
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-4">
+                    Kunjungi atau Reservasi Meja Sekarang
+                </h2>
+                <p class="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mb-8 font-light">
+                    Kunjungi kami langsung di Jl. Prof. Dr. Suharso No.2 Purwokerto atau hubungi kami untuk reservasi dan pesanan takeaway.
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20ingin%20reservasi%20meja" target="_blank" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-amberGold-400 to-amberGold-500 hover:from-amberGold-300 hover:to-amberGold-400 text-[#120d0a] font-bold text-sm shadow-xl transition-all hover:scale-105 flex items-center">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2 text-[#120d0a]"></i> Hubungi WhatsApp Purwokerto
+                    </a>
+                    <a href="https://maps.google.com/?q=Els+Koffie+Purwokerto" target="_blank" class="px-8 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/20 transition flex items-center">
+                        <i class="fa-solid fa-map-location-dot mr-2 text-amberGold-400"></i> Buka Rute Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating WhatsApp Quick Button -->
+    <a href="https://wa.me/6281225809988?text=Halo%20El's%20Coffee%20Purwokerto,%20saya%20ingin%20tanya%20menu%20dan%20tempat" target="_blank" class="fixed bottom-6 right-6 z-40 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group" title="Chat WhatsApp Cabang Purwokerto">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs group-hover:ml-2 text-sm font-semibold transition-all duration-300">
+            Chat Purwokerto
+        </span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-[#120d0a] text-gray-300 pt-16 pb-12 border-t border-[#291e17]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-amberGold-400 flex items-center justify-center text-[#120d0a] font-bold">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <div>
+                            <span class="text-xl font-serif font-bold text-white block">El's Coffee</span>
+                            <span class="text-[10px] tracking-widest uppercase text-amberGold-400 font-semibold">Cabang Purwokerto</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        Menghadirkan kenikmatan kopi specialty nusantara berkualitas prima dari roastery berpengalaman, dipadu hidangan lezat dan tempat yang sangat nyaman untuk santai maupun WFC di Purwokerto.
+                    </p>
+                    <div class="flex items-center space-x-3 text-lg">
+                        <a href="https://instagram.com/elscoffee.purwokerto" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-amberGold-400 hover:text-[#120d0a] flex items-center justify-center transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://maps.google.com/?q=Els+Koffie+Purwokerto" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-amberGold-400 hover:text-[#120d0a] flex items-center justify-center transition">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                        <a href="https://wa.me/6281225809988" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-amberGold-400 hover:text-[#120d0a] flex items-center justify-center transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-serif font-semibold text-lg mb-4 border-b border-[#2d2119] pb-2">Navigasi</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#beranda" class="hover:text-amberGold-400 transition flex items-center"><i class="fa-solid fa-angle-right text-xs text-amberGold-500 mr-2"></i> Beranda</a></li>
+                        <li><a href="#menu" class="hover:text-amberGold-400 transition flex items-center"><i class="fa-solid fa-angle-right text-xs text-amberGold-500 mr-2"></i> Menu Kopi & Makanan</a></li>
+                        <li><a href="#fasilitas" class="hover:text-amberGold-400 transition flex items-center"><i class="fa-solid fa-angle-right text-xs text-amberGold-500 mr-2"></i> Fasilitas Kafe</a></li>
+                        <li><a href="#galeri" class="hover:text-amberGold-400 transition flex items-center"><i class="fa-solid fa-angle-right text-xs text-amberGold-500 mr-2"></i> Foto Suasana</a></li>
+                        <li><a href="#lokasi" class="hover:text-amberGold-400 transition flex items-center"><i class="fa-solid fa-angle-right text-xs text-amberGold-500 mr-2"></i> Alamat & Peta</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-serif font-semibold text-lg mb-4 border-b border-[#2d2119] pb-2">Cabang Purwokerto</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-map-pin text-amberGold-400 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Jl. Prof. Dr. Suharso No.2, Arcawinangun, Purwokerto Timur (Dekat GOR Satria)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone text-amberGold-400 mr-3 flex-shrink-0"></i>
+                            <span>0812-2580-9988</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-brands fa-instagram text-amberGold-400 mr-3 flex-shrink-0"></i>
+                            <a href="https://instagram.com/elscoffee.purwokerto" target="_blank" class="hover:text-amberGold-400">@elscoffee.purwokerto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-serif font-semibold text-lg mb-4 border-b border-[#2d2119] pb-2">Jam Buka</h3>
+                    <div class="bg-[#1a130f] p-4 rounded-xl border border-[#2e221b] text-sm space-y-2">
+                        <div class="flex justify-between items-center text-gray-200">
+                            <span>Senin - Jumat</span>
+                            <span class="font-semibold text-amberGold-400">10.00 - 22.00 WIB</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-200">
+                            <span>Sabtu - Minggu</span>
+                            <span class="font-semibold text-amberGold-400">09.00 - 22.30 WIB</span>
+                        </div>
+                        <div class="pt-2 border-t border-gray-800 text-xs text-gray-400 flex items-center">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i>
+                            Dine-In, Takeaway & Delivery Ready
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-[#231a14] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <p>&copy; 2026 El's Coffee Purwokerto. Dibuat dengan arsitektur Laravel (PHP Framework).</p>
+                <div class="flex space-x-6">
+                    <a href="#lokasi" class="hover:text-amberGold-400">Peta & Rute</a>
+                    <a href="#menu" class="hover:text-amberGold-400">Menu Rekomendasi</a>
+                    <a href="https://maps.google.com/?q=Els+Koffie+Purwokerto" target="_blank" class="hover:text-amberGold-400">Ulasan Google</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts for Mobile Drawer and Filter/Search -->
+    <script>
+        // Mobile Drawer toggle
+        const btn = document.getElementById('mobileMenuBtn');
+        const menu = document.getElementById('mobileMenu');
+        const icon = document.getElementById('menuIcon');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        });
+
+        // Interactive Category Filter & Live Search
+        let currentCategory = 'all';
+        const searchInput = document.getElementById('menuSearch');
+        const menuItems = document.querySelectorAll('.menu-item');
+        const catButtons = document.querySelectorAll('.cat-btn');
+
+        function filterMenu(cat) {
+            currentCategory = cat;
+
+            // Update button styles
+            catButtons.forEach(b => {
+                if (b.dataset.cat === cat) {
+                    b.classList.remove('bg-gray-100', 'text-gray-700');
+                    b.classList.add('bg-coffee-900', 'text-white', 'shadow');
+                } else {
+                    b.classList.remove('bg-coffee-900', 'text-white', 'shadow');
+                    b.classList.add('bg-gray-100', 'text-gray-700');
+                }
+            });
+
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const query = searchInput.value.toLowerCase().trim();
+
+            menuItems.forEach(item => {
+                const matchCat = (currentCategory === 'all' || item.dataset.category === currentCategory);
+                const matchText = !query || item.dataset.name.toLowerCase().includes(query);
+
+                if (matchCat && matchText) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', applyFilters);
+    </script>
+</body>
+</html>
